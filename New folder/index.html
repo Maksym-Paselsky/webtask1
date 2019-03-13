@@ -6,31 +6,40 @@
  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
     <title>Fun</title>
   </head>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#video">Trailer</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#jack">Jack</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#aku">Aku</a>
-            </li>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#ashi">Ashi</a>
+                <a class="nav-link" href="#video">Trailer</a>
               </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#history">History</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<header>
+              <li class="nav-item">
+                  <a class="nav-link" href="#jack">Jack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aku">Aku</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#ashi">Ashi</a>
+                    </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>  
+        </ul>
+      
+      </div>
+    </nav>
+
+
+
+  <header>
   <span id="video"></span>
     <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -44,8 +53,6 @@
     </div>
   </div>
 </header>
-<body>
-  
 
     
     
@@ -65,7 +72,7 @@
           <div class="carousel-item active">
             <div class="view">
               <img class="d-block w-100" src="ricardo-catarino-bg1.jpg" alt="First slide">
-              <div class="mask rgba-black-light"></div>
+              
             </div>
             <div class="carousel-caption">
               <h3 class="h3-responsive">Long ago in a distant land, I, Aku, the shape shifting master of darkness, unleashed an unspeakable evil!</h3>
@@ -74,7 +81,7 @@
           <div class="carousel-item">
             <div class="view">
               <img class="d-block w-100" src="maxresdefault.jpg" alt="Second slide">
-              <div class="mask rgba-black-strong"></div>
+             
             </div>
             <div class="carousel-caption">
               <h3 class="h3-responsive">But a foolish samurai warrior wielding a magic sword stepped forth to oppose me!</h3>
@@ -83,7 +90,7 @@
           <div class="carousel-item">
             <div class="view">
               <img class="d-block w-100" src="samuraijack1.jpg" alt="Third slide">
-              <div class="mask rgba-black-slight"></div>
+             
             </div>
             <div class="carousel-caption">
               <h3 class="h3-responsive">Before the final blow was struck, I tore open a portal in time, and flung him into the future where my evil is law.</h3>
@@ -92,7 +99,7 @@
           <div class="carousel-item">
               <div class="view">
                 <img class="d-block w-100" src="2622.jpg" alt="Fourh slide">
-                <div class="mask rgba-black-slight"></div>
+              
               </div>
               <div class="carousel-caption">
                 <h3 class="h3-responsive">Now the fool seeks to return to the past and undo the future that is Aku!</h3>
@@ -152,18 +159,19 @@
               She served as Jack's most important ally in Season 5, in Episode XCIX she and Jack eventually fall in love with each other. Eventually, after meeting Aku in person in Episode C, it is revealed that Aku was her biological father, after which he corrupts her unwillingly into his service.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="dddd.png" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16968398c47%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16968398c47%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          <img class="featurette-image img-fluid mx-auto" id="idd" src="dddd.png" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16968398c47%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16968398c47%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+    <script type="text/javascript" src='script.js'></script>
+    
   
-    </main>
-
-</html>
+    
+  </body>
+  </html>
